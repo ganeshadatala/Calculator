@@ -1,0 +1,92 @@
+     /* --- CSS STYLING --- */
+        
+        /* General Page Setup */
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Calculator Container */
+        .calculator {
+            background-color: #22252d;
+            width: 350px;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+
+        /* Display Screen */
+        .display {
+            width: 100%;
+            height: 80px;
+            margin-bottom: 20px;
+            text-align: right;
+            padding: 10px;
+            font-size: 2.5rem;
+            color: white;
+            background-color: transparent;
+            border: none;
+            outline: none;
+        }
+
+        /* Button Grid Layout */
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns */
+            gap: 12px;
+        }
+
+        /* Button Styling */
+        button {
+            padding: 20px;
+            font-size: 1.2rem;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+            background-color: #2a2d36;
+            color: white;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        /* Hover Effects */
+        button:hover {
+            background-color: #383c47;
+        }
+
+        /* Click Press Effect */
+        button:active {
+            transform: scale(0.95);
+        }
+
+        /* Specific Colors for Operators */
+        .operator {
+            color: #26ebd1;
+            font-weight: bold;
+        }
+
+        /* Specific Colors for Top Row (Clear, Delete) */
+        .top-btn {
+            color: #eb6a6a;
+            font-weight: bold;
+        }
+
+        /* Equals Button Styling */
+        .equal-btn {
+            grid-column: span 2; /* Make it take up 2 spaces */
+            background-color: #26ebd1;
+            color: #22252d;
+            font-weight: bold;
+        }
+        
+        .equal-btn:hover {
+            background-color: #1acfb8;
+        }
